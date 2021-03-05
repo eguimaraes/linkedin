@@ -1,6 +1,3 @@
-#Add references to SharePoint client assemblies and authenticate to Office 365 site
-#Original at https://blogs.technet.microsoft.com/fromthefield/2015/03/03/office-365-create-a-list-and-add-custom-fields-using-csom/
-
 Add-Type -Path "C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\16\ISAPI\Microsoft.SharePoint.Client.dll"
 Add-Type -Path "C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\16\ISAPI\Microsoft.SharePoint.Client.Runtime.dll"
 $Username = "admin@tenant.onmicrosoft.com"
