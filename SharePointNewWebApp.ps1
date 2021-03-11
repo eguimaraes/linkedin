@@ -1,14 +1,20 @@
-$nome
+Add-PSSnapin Microsoft.SharePoint.PowerShell -ErrorAction SilentlyContinue
 
-$porta
+$nome="nome"
 
-$hh=
+$porta="80"
 
-$appool
+$hh="hostheader.com.brbr"
 
-$appConta=
+$appool="nomedopool"
+
+$appConta="domain\name"
+
+$url="http://url/"
+
+$db="wss_Nomedb"
 
 
 
-New-SPWebApplication -Name "Contoso Internet Site" -Port 80 -HostHeader sharepoint.contoso.com -URL "http://www.contoso.com" -ApplicationPool "ContosoAppPool" -ApplicationPoolAccount (Get-SPManagedAccount "DOMAIN\wa")
+New-SPWebApplication -Name $nome -Port 80 -HostHeader $hh -URL $url -ApplicationPool $appool -ApplicationPoolAccount (Get-SPManagedAccount $appConta) -DatabaseName $db
 
