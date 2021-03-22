@@ -1,0 +1,15 @@
+FROM debian:latest
+RUN apt-get -y update    
+RUN apt-get -y upgrade    
+RUN apt-get install -y git
+RUN apt install -y python2
+RUN apt-get install -y python3
+RUN apt-get install -y python-pip
+RUN apt-get install -y python3-pip
+RUN pip2 install healpy
+RUN pip2 install astropy
+RUN pip2 install scipy
+RUN pip3 install healpy
+RUN pip3 install astropy
+RUN pip3 install scipy
+WORKDIR /
